@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Navbar Styling */
+.navbar{
+    /* background-color: rgb(15, 15, 158); */
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.max-width{
+    /* max-width: 1300px; */
+    padding: 0 80px;
+    margin: auto;
+}
+
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a{
+    font-weight: 600;
+    font-size: 25px;
+    color: white;
+}
+
+.navbar .logo a span{
+    background: rgb(15, 15, 158);
+    color: white;
+    padding: 4px;
+    border-radius: 8px;
+}
+
+.navbar .menu li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+.navbar .menu li a{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: 0.5s;
+}
+
+.navbar .menu li a:hover{
+    background: white;
+    color: rgb(15, 15, 158);
+    border-radius: 8px;
+    padding: 8px;
+    font-weight: 700;
+}
+
+/* home section styling */
+.home{
+    display: flex;
+    /* background: url("images/keyboard.jpg") no-repeat center; */
+    background: black;
+    height: 100vh;
+    min-height: 500px;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.home .max-width{
+    margin: auto 0 auto 10px;
+}
+
+.home .home-content a{
+    display: inline-block;
+    background: rgb(191, 17, 17);
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 25px;
+    transition: 0.5s;
+}
+
+.home .home-content a:hover{
+    border:3px solid rgb(191, 17, 17);
+    background: none;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.home .home-content .text-1{
+    font-size: 27px;
+}
+
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+.home .home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+.home .home-content .text-3 span{
+    color: rgb(15, 15, 158);
+    font-weight: 700;
+}
