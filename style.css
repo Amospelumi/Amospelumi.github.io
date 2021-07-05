@@ -5,6 +5,10 @@
     text-decoration: none;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /* Navbar Styling */
 .navbar{
     /* background-color: rgb(15, 15, 158); */
@@ -50,12 +54,11 @@
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
-    transition: 0.5s;
+    transition: 0.5s ease;
 }
 
 .navbar .menu li a:hover{
-    background: rgb(255, 255, 255);
-    color: rgb(15, 15, 158);
+    color: rgb(191, 17, 17);
     border-radius: 8px;
     padding: 8px;
     font-weight: 700;
