@@ -44,6 +44,13 @@ html{
 }
 
 .navbar .logo a span{
+    background: rgb(15, 15, 158);
+    color: white;
+    padding: 4px;
+    border-radius: 8px;
+}
+
+.navbar.sticky .logo a span{
     color: rgb(15, 15, 158);
     background: white;
     padding: 4px;
@@ -68,6 +75,14 @@ html{
     border-radius: 8px;
     padding: 8px;
     font-weight: 700;
+}
+
+/* menu btn styling */
+.menu-btn{
+    color:white;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
 }
 
 /* home section styling */
@@ -126,6 +141,20 @@ html{
     color: white;
     padding: 4px;
     border-radius: 4px;
+}
+
+/* responsive media querry start */
+@media(max-width: 700px){
+    .max-width{
+        padding: 0 50px;
+
+    }
+    .navbar .menu{
+        position: fixed;
+        background-color: rgb(15, 15, 158);
+        height: 100vh;
+        width: 100%;
+    }
 }
 
 /* About Section Styling */
