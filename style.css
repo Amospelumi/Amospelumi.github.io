@@ -12,13 +12,17 @@ html{
 
 /* Navbar Styling */
 .navbar{
-    /* background-color: rgb(15, 15, 158); */
-    margin-top: 20px;
     padding: 15px;
     z-index: 999;
     position: fixed;
     width: 100%;
     font-family: 'Ubuntu', sans-serif;
+    transition: All 0.5s ease;
+}
+
+.navbar.sticky{
+    padding: 40px 0;
+    background-color: rgb(15, 15, 158); 
 }
 
 .max-width{
@@ -40,8 +44,8 @@ html{
 }
 
 .navbar .logo a span{
-    background: rgb(15, 15, 158);
-    color: white;
+    color: rgb(15, 15, 158);
+    background: white;
     padding: 4px;
     border-radius: 8px;
 }
@@ -86,9 +90,10 @@ html{
     display: inline-block;
     background: rgb(191, 17, 17);
     color: white;
-    padding: 10px;
+    margin-top: 10px;
+    padding: 10px 30px;
     border-radius: 8px;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 25px;
     transition: 0.5s;
 }
@@ -96,7 +101,7 @@ html{
 .home .home-content a:hover{
     border:3px solid rgb(191, 17, 17);
     background: none;
-    padding: 12px;
+    padding: 10px 30px;
     border-radius: 8px;
 }
 
@@ -116,8 +121,11 @@ html{
 }
 
 .home .home-content .text-3 span{
-    color: rgb(15, 15, 158);
+    background-color: rgb(15, 15, 158);
     font-weight: 700;
+    color: white;
+    padding: 4px;
+    border-radius: 4px;
 }
 
 /* About Section Styling */
