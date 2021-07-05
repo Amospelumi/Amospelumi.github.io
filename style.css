@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    font-family: 'Poppins', sans-serif;
 }
 
 html{
@@ -67,10 +68,11 @@ html{
 /* home section styling */
 .home{
     display: flex;
-    /* background: url("images/keyboard.jpg") no-repeat center; */
-    background: black;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.74),rgba(0, 0, 0, 0.685)), url("images/lightkey.jpg");
+    background-size: cover;
     height: 100vh;
     min-height: 500px;
+    width: 100%;
     color: white;
     font-family: 'Ubuntu', sans-serif;
 }
