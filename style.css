@@ -115,6 +115,7 @@ html{
 
 .home .home-content a:hover{
     border:3px solid rgb(191, 17, 17);
+    color: rgb(191, 17, 17);
     background: none;
     padding: 10px 30px;
     border-radius: 8px;
@@ -139,24 +140,26 @@ html{
     background-color: rgb(15, 15, 158);
     font-weight: 700;
     color: white;
-    padding: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
     border-radius: 4px;
 }
 
 /* responsive media querry start */
 @media(max-width: 1104px){
-
+    .home .max-width{
+        margin-left: 0px;
+    }
 }
 
-@media(max-width: 947px){
-    
-}
-
-@media(max-width: 947px){
+@media(max-width: 991px){
     .max-width{
         padding: 0 50px;
 
     }
+}
+
+@media(max-width: 947px){
     .menu-btn{
         color:white;
         font-size: 30px;
@@ -189,10 +192,33 @@ html{
         margin: 20px 0;
         font-size: 25px;
     }
-    
-    
 
 }
+
+@media(max-width: 991px){
+    .max-width{
+        padding: 0 23px;
+    }
+    
+    .home .home-content .text-2{
+        font-size: 60px;
+    }
+    
+    .home .home-content .text-3{
+        font-size: 32px;
+    }
+}
+
+@media(max-width: 500px){
+    .home .home-content .text-2{
+        font-size: 50px;
+    }
+    
+    .home .home-content .text-3{
+        font-size: 27px;
+    }
+}
+
 
 /* About Section Styling */
 section{
