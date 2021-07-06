@@ -103,10 +103,9 @@ html{
 
 .home .home-content a{
     display: inline-block;
-    text-align: center;
     background: rgb(191, 17, 17);
     color: white;
-    margin-top: 20px;
+    margin-top: 10px;
     padding: 10px 30px;
     border-radius: 8px;
     font-weight: 500;
@@ -126,7 +125,7 @@ html{
 }
 
 .home .home-content .text-2{
-    font-size: 60px;
+    font-size: 75px;
     font-weight: 600;
     margin-left: -3px;
 }
@@ -145,10 +144,17 @@ html{
 }
 
 /* responsive media querry start */
-@media(max-width: 700px){
+@media(max-width: 1104px){
+
+}
+
+@media(max-width: 947px){
+    
+}
+
+@media(max-width: 947px){
     .max-width{
         padding: 0 50px;
-        width: 100%;
 
     }
     .menu-btn{
@@ -183,47 +189,8 @@ html{
         margin: 20px 0;
         font-size: 25px;
     }
-
-
-    .home .home-content .text-1{
-        font-size: 20px;
-    }
     
-    .home .home-content .text-2{
-        font-size: 45px;
-        font-weight: 600;
-        margin-left: -3px;
-    }
     
-    .home .home-content .text-3{
-        font-size: 25px;
-        margin: 5px 0;
-    }
-
-    .about .about-content .column{
-        width: 100%;
-        /* flex-direction: column; */
-    }
-
-    .about .about-content{
-        margin: 0;
-    }
-
-    .about .about-content .left img{
-        height: 50px;
-        width: 50px;
-
-    }
-
-    .about .about-content .left{
-        display: flex;
-        justify-content: space-between;
-        margin: 0;
-    }
-
-    .about .about-content .right{
-        flex: 100%;
-    }
 
 }
 
@@ -277,7 +244,7 @@ section{
 }
 
 .about .about-content .left{
-    width: 20%;
+    width: 45%;
 }
 
 .about .about-content .left img{
@@ -288,7 +255,7 @@ section{
 }
 
 .about .about-content .right{
-    width: 45%;
+    width: 55%;
 }
 
 .about .about-content .right .text{
