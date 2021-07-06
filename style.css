@@ -213,7 +213,7 @@ html{
     .about .about-content .left{
         display: flex;
         justify-content: space-between;
-        margin: 0px;
+        margin: 0;
     }
 
     .about .about-content .right{
