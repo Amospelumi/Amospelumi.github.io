@@ -149,12 +149,32 @@ html{
         padding: 0 50px;
 
     }
+    .menu-btn{
+        color:white;
+        font-size: 23px;
+        cursor: pointer;
+        display: block;
+        z-index: 999;
+    }
     .navbar .menu{
         position: fixed;
-        background-color: rgb(15, 15, 158);
+        background-color: rgba(4, 4, 100, 0.981); 
         height: 100vh;
         width: 100%;
+        left: 0;
+        top: 0;
+        text-align: center;
+        padding-top: 80px;
     }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+
 }
 
 /* About Section Styling */
