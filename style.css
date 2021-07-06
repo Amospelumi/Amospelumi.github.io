@@ -149,6 +149,20 @@ html{
 section{
     padding: 100px 0;
 }
+
+
+.about, .services, .skills{
+    font-family: 'Poppins', sans-serif;
+}
+
+.about .about-content, .services .services-contentl, .skills .skills-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
 section .title{
     position: relative;
     text-align: center;
@@ -181,22 +195,72 @@ section .title::after{
     transform: translate(-50%);
 }
 
-/* About Section Styling */
-.about, .services{
-    font-family: 'Poppins', sans-serif;
+/* Services section styling start */
+.services{
+    margin-top: 80px;
+    background: rgb(247, 247, 247);
+    /* color: white; */
+}
+.services .title::after{
+    content: "what i provide";
+    background: rgb(247, 247, 247);
 }
 
+.services .services-content .card{
+    width: calc(33% - 20px);
+    background: rgb(213, 212, 212);
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.services .services-content .card:hover{
+    background-color: rgb(15, 15, 158);
+    color: white;
+}
+.services .services-content .card .box{
+    transition: all 0.3s ease;
+}
+
+.services .services-content .card:hover .box{
+    transform: scale(1.05);
+}
+.services .services-content .card i{
+    font-size: 50px;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.services .services-content .card:hover i{
+    color: white;
+}
+
+.services .services-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+/* Skills section styling */
+.skills .title::after{
+    content: "What i know";
+}
+
+.skills .skills-content .column{
+    width: calc(50% - 30px);
+}
+
+.skilld .skills-content .left .text{
+    font-size: 25;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* About Section Styling */
 .about .title::after{
     content: "who i am";
-}
-
-.about .about-content,
-.services .services-content{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    
 }
 
 .about .about-content .left{
@@ -248,33 +312,6 @@ section .title::after{
     border-radius: 8px;
     color: rgb(191, 17, 17);
 }
-
-
-/* Services section styling start */
-.services{
-    margin-top: 80px;
-    background: rgb(247, 247, 247);
-    /* color: white; */
-}
-.services .title::after{
-    content: "what i provide";
-    background: rgb(247, 247, 247);
-}
-
-.services .services-content .card{
-    width: calc(33% - 20px);
-    background: rgba(15, 15, 158, 0.219);
-    text-align: center;
-    border-radius: 6px;
-    padding: 20px 25px;
-    cursor: pointer;
-}
-
-.services .services-content .card i{
-    font-size: 50px;
-    color: rgb(15, 15, 158);
-}
-
 
 /* responsive media querry start */
 @media(max-width: 1300px){
@@ -362,6 +399,11 @@ section .title::after{
         flex: 100%;
     }
 
+    .services .services-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+
 
 }
 
@@ -380,6 +422,10 @@ section .title::after{
 
     .home .home-content a{
         font-size: 20px;
+    }
+
+    .services .services-content .card{
+        width:100%;
     }
 }
 
