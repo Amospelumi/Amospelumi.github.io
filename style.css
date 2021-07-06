@@ -206,14 +206,14 @@ html{
 
     .about .about-content .left img{
         height: 100px;
-        width: 100px;
+        width: 200px;
 
     }
 
     .about .about-content .left{
         display: flex;
         justify-content: space-between;
-        margin: 60px;
+        margin: 45px;
     }
 
     .about .about-content .right{
