@@ -204,6 +204,10 @@ html{
         /* flex-direction: column; */
     }
 
+    .about .about-content{
+        margin: 40px;
+    }
+
     .about .about-content .left img{
         height: 100px;
         width: 200px;
@@ -213,7 +217,7 @@ html{
     .about .about-content .left{
         display: flex;
         justify-content: space-between;
-        margin: 0;
+        margin: 45px;
     }
 
     .about .about-content .right{
