@@ -103,9 +103,10 @@ html{
 
 .home .home-content a{
     display: inline-block;
+    text-align: center;
     background: rgb(191, 17, 17);
     color: white;
-    margin-top: 10px;
+    margin-top: 20px;
     padding: 10px 30px;
     border-radius: 8px;
     font-weight: 500;
@@ -198,6 +199,27 @@ html{
         margin: 5px 0;
     }
 
+    .about .about-content .column{
+        width: 100%;
+        /* flex-direction: column; */
+    }
+
+    .about .about-content .left img{
+        height: 300px;
+        width: 300px;
+
+    }
+
+    .about .about-content .left{
+        display: flex;
+        justify-content: space-between;
+        margin: 60px;
+    }
+
+    .about .about-content .right{
+        flex: 100%;
+    }
+
 }
 
 /* About Section Styling */
@@ -250,7 +272,7 @@ section{
 }
 
 .about .about-content .left{
-    width: 45%;
+    width: 20%;
 }
 
 .about .about-content .left img{
@@ -261,7 +283,7 @@ section{
 }
 
 .about .about-content .right{
-    width: 55%;
+    width: 45%;
 }
 
 .about .about-content .right .text{
