@@ -149,6 +149,19 @@ html{
 section{
     padding: 100px 0;
 }
+
+.about, .services, .skills{
+    font-family: 'Poppins', sans-serif;
+}
+
+.about .about-content, .services .services-content, .skills .skills-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
 section .title{
     position: relative;
     text-align: center;
@@ -231,22 +244,43 @@ section .title::after{
     margin: 10px 0 7px 0;
 }
 
-/* About Section Styling */
-.about, .services{
-    font-family: 'Poppins', sans-serif;
+/* Skill Section styling start */
+.skills .title::after{
+    content: "What i know";
 }
 
+.skills .skills-content .column{
+    width: calc(50% - 30px);
+}
+
+.skills .skills-content .left .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+
+}
+
+.skills .skills-content  .right .bars{
+    margin-bottom: 15px ;
+}
+
+.skills .skills-content  .right .info{
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+} 
+
+.skills .skills-content  .right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+
+
+
+/* About Section Styling */
 .about .title::after{
     content: "who i am";
-}
-
-.about .about-content,
-.services .services-content{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    
 }
 
 .about .about-content .left{
