@@ -88,7 +88,7 @@ html{
 /* home section styling */
 .home{
     display: flex;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.74),rgba(0, 0, 0, 0.685)), url("images/lightkey.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.74),rgba(0, 0, 0, 0.042)), url("images/lightkey.jpg");
     background-size: cover;
     height: 100vh;
     min-height: 500px;
@@ -150,7 +150,7 @@ section{
     padding: 100px 0;
 }
 
-.about, .services, .skills{
+.about, .services, .skills, .teams{
     font-family: 'Poppins', sans-serif;
 }
 
@@ -178,7 +178,7 @@ section .title::before{
     background: black;
     bottom: -3px;
     left: 50%;
-    width: 180px;
+    width: 250px;
     height: 5px;
     transform: translate(-50%);
 }
@@ -257,7 +257,30 @@ section .title::after{
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 10px;
+}
 
+.skills .skills-content .left p{
+    text-align: justify;
+}
+
+.skills .skills-content .left a{
+    display: inline-block;
+    background: rgb(191, 17, 17);
+    color: white;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.skills .skills-content .left a:hover{
+    border:3px solid rgb(191, 17, 17);
+    color: rgb(191, 17, 17);
+    background: none;
+    padding: 10px 30px;
+    border-radius: 8px;
 }
 
 .skills .skills-content  .right .bars{
@@ -266,6 +289,7 @@ section .title::after{
 
 .skills .skills-content  .right .info{
     display: flex;
+    margin-bottom: 5px;
     align-items: center; 
     justify-content: space-between;
 } 
@@ -275,27 +299,88 @@ section .title::after{
     font-size: 18px;
 }
 
-.skills .skills-content  .right .line{
+.skills .skills-content .right .line{
     height: 5px;
     width: 100%;
     background: lightgrey;
     position: relative;
+    border-radius: 0 4px 4px 0;
 }
 
-.skills .skills-content  .right .line::before{
+.skills .skills-content .right .line::before{
     content: "";
     position: absolute;
     height: 100%;
+    border-radius: 0 8px 8px 0;
+    left: 0;
+    top: 0;
+}
+
+.skills-content .right .php::before{
+    width: 60%;
+    background:rgb(15, 15, 158);
+}
+
+.skills-content .right .javaScript::before{
+    width: 20%;
+    background:rgb(191, 17, 17);
+}
+
+.skills-content .right .html::before{
     width: 80%;
     background:rgb(15, 15, 158);
 }
 
-.skills-content  .right javascript{
-    width: 80$;
+.skills-content  .right .css::before{
+    width: 60%;
+    background:rgb(15, 15, 158);
 }
 
-.skills-content  .right  {
-    width: 80$;
+.skills-content .right .UIUX::before{
+    width: 70%;
+    background:rgb(15, 15, 158);
+}
+
+.skills-content .right .python::before{
+    width: 50%;
+    background:rgb(15, 15, 158);
+}
+
+.skills-content .right .mysql::before{
+    width: 60%;
+    background:rgb(15, 15, 158);
+}
+
+/* team section styling */
+.teams .title::after{
+    content: "Those i share idea with";
+}
+.teams{
+    color: white;
+    background: black;
+    padding: 25px 35px;
+}
+
+.teams .title::before{
+    background: white;
+}
+
+.teams .title::after{
+    background: black;
+}
+
+.teams .carousel .card{
+    background: rgb(41, 41, 41);
+    border-radius: 6px;
+    padding: 25px 35px;
+}
+
+.teams .carousel .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid rgb(15, 15, 158);;
 }
 
 
@@ -444,6 +529,11 @@ section .title::after{
     .services .services-content .card{
         width: calc(50% - 10px);
         margin-bottom: 20px;
+    }
+
+    .skills .skills-content .column{
+        width: 100%;
+        margin-bottom: 35px;
     }
 
 
