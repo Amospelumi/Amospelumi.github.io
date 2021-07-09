@@ -275,7 +275,28 @@ section .title::after{
     font-size: 18px;
 }
 
+.skills .skills-content  .right .line{
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
 
+.skills .skills-content  .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    background:rgb(15, 15, 158);
+}
+
+.skills-content  .right javascript{
+    width: 80$;
+}
+
+.skills-content  .right {
+    width: 80$;
+}
 
 
 /* About Section Styling */
