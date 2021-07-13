@@ -209,7 +209,8 @@ section .title::after{
 
 .services .services-content .card{
     width: calc(33% - 20px);
-    background: rgb(213, 212, 212);
+    background-color: rgb(15, 15, 158);
+    color: white;
     text-align: center;
     border-radius: 6px;
     padding: 20px 25px;
@@ -218,7 +219,7 @@ section .title::after{
 }
 
 .services .services-content .card:hover{
-    background-color: rgb(15, 15, 158);
+    box-shadow: 1px 1px 3px 5px 0 black;
     color: white;
 }
 .services .services-content .card .box{
@@ -230,7 +231,7 @@ section .title::after{
 }
 .services .services-content .card i{
     font-size: 50px;
-    color: black;
+    color: rgb(191, 17, 17);
     transition: color 0.3s ease;
 }
 
@@ -358,7 +359,7 @@ section .title::after{
 .teams{
     color: white;
     background: black;
-    padding: 25px 35px;
+    padding: 25px 35px 5;
 }
 
 .teams .title::before{
@@ -370,9 +371,28 @@ section .title::after{
 }
 
 .teams .carousel .card{
-    background: rgb(41, 41, 41);
+    background: rgb(15, 15, 158);
     border-radius: 6px;
     padding: 25px 35px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.teams .carousel .card:hover{
+    background-color: rgb(12, 12, 128);
+}
+
+.teams .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.teams .carousel .card .text{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
 }
 
 .teams .carousel .card img{
@@ -380,7 +400,11 @@ section .title::after{
     width: 150px;
     object-fit: cover;
     border-radius: 50%;
-    border: 5px solid rgb(15, 15, 158);;
+    border: 5px solid white;
+}
+
+.teams .carousel .card:hover img{
+    border-color: white;
 }
 
 
