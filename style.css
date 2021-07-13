@@ -387,6 +387,11 @@ section .title::after{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    transition: 0.5s;
+}
+
+.teams .carousel .card:hover .box{
+    transform: scale(1.05);
 }
 
 .teams .carousel .card .text{
