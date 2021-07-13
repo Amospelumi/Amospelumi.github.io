@@ -13,6 +13,22 @@ $(document).ready(function(){
         $('.menu-btn i').toggleClass('active');
     });
 
+    // typing animation script
+    var typed = new Typed(".typing", {
+        strings: ["Graphics Designer.", "Junior Full-Stack Developer.", "UI/UX Designer.", "Freelancer."],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+
+    });
+    var typed = new Typed(".typing-2", {
+        strings: ["Graphics Designer.", "Junior Full-Stack Developer.", "UI/UX Designer.", "Freelancer."],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+
+    });
+
     // owl-carousel script
     $('.carousel').owlCarousel({
         margin: 20,
@@ -33,5 +49,5 @@ $(document).ready(function(){
                 nav: false
             }
         }
-    })
+    });
 });
