@@ -199,12 +199,18 @@ section .title::after{
 /* Services section styling start */
 .services{
     margin-top: 80px;
-    background: rgb(247, 247, 247);
+    background: rgb(0, 0, 0);
     /* color: white; */
+    color: white;
 }
+
 .services .title::after{
     content: "what i provide";
-    background: rgb(247, 247, 247);
+    background: rgb(0, 0, 0);
+}
+
+.services .title::before{
+    background: rgb(255, 255, 255);
 }
 
 .services .services-content .card{
@@ -354,7 +360,9 @@ section .title::after{
 
 /* team section styling */
 .teams .title::after{
-    content: "Those i share idea with";
+    content: "Those with me";
+    background: black;
+
 }
 .teams{
     color: white;
@@ -366,9 +374,7 @@ section .title::after{
     background: white;
 }
 
-.teams .title::after{
-    background: black;
-}
+
 
 .teams .carousel .card{
     background: rgb(15, 15, 158);
