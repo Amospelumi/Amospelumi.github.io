@@ -459,7 +459,7 @@ section .title::after{
     width: 400px;
     object-fit: cover;
     border-radius: 50px;
-    border: 15px solid rgb(173, 173, 245);
+    border: 5px solid rgb(255, 255, 255);
     box-shadow: 1px 1px 15px 0 black;
 }
 
