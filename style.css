@@ -421,22 +421,29 @@ section .title::after{
 
 .owl-dots{
     text-align: center;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 .owl-dot{
-    height: 20px;
-    width: 20px;
+    height: 13px;
+    width: 13px;
     margin: 0 5px;
     outline: none!important;
     border-radius: 50%;
-    border: 2px solid rgb(15, 15, 158);
+    border: 2px solid rgb(15, 15, 158)!important;
+    transition: all 0.3s ease;
 }
 
 .owl-dot.active{
     width: 35px;
     border-radius: 14px;
 }
+
+.owl-dot.active, .owl-dot:hover{
+    background: rgb(15, 15, 158)!important;
+}
+
+
 
 /* About Section Styling */
 .about .title::after{
@@ -451,7 +458,9 @@ section .title::after{
     height: 400px;
     width: 400px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 50px;
+    border: 15px solid rgb(173, 173, 245);
+    box-shadow: 1px 1px 15px 0 black;
 }
 
 .about .about-content .right{
