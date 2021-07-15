@@ -22,7 +22,7 @@ html{
 
 .navbar.sticky{
     padding: 30px 0;
-    background-color: hsl(245, 100%, 7%); 
+    background-color: #010161; 
 }
 
 .max-width{
@@ -39,19 +39,19 @@ html{
 
 .navbar .logo a{
     font-weight: 600;
-    font-size: 25px;
+    font-size: 20px;
     color: white;
 }
 
 .navbar .logo a span{
-    background: hsl(245, 100%, 7%);
+    background: #010161;
     color: white;
     padding: 4px;
     border-radius: 8px;
 }
 
 .navbar.sticky .logo a span{
-    color: hsl(245, 100%, 7%);
+    color: #010161;
     background: white;
     padding: 4px;
     border-radius: 8px;
@@ -64,7 +64,7 @@ html{
 
 .navbar .menu li a{
     color: white;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 500;
     margin-left: 25px;
     transition: 0.5s ease;
@@ -88,7 +88,7 @@ html{
 /* home section styling */
 .home{
     display: flex;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.74),rgba(0, 0, 0, 0.042)), url("images/bg.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.87),rgba(0, 0, 0, 0.042)), url("images/bg.jpg");
     background-size: cover;
     height: 100vh;
     min-height: 500px;
@@ -137,9 +137,8 @@ html{
 }
 
 .home .home-content .text-3 span{
-    background-color: hsl(245, 100%, 7%);
     font-weight: 500;
-    color: white;
+    color: rgb(89, 10, 10);
     padding-left: 4px;
     padding-right: 4px;
     border-radius: 4px;
@@ -165,8 +164,9 @@ section{
 section .title{
     position: relative;
     text-align: center;
-    font-size: 40px;
-    font-weight: 700;
+    color: #010161;
+    font-size: 35px;
+    font-weight: 500;
     margin-bottom: 60px;
     padding-bottom: 20px;
     font-family: 'Poppins', sans-serif;
@@ -175,7 +175,7 @@ section .title{
 section .title::before{
     content: "";
     position: absolute;
-    background: black;
+    background: #010161;
     bottom: -3px;
     left: 50%;
     width: 200px;
@@ -188,7 +188,7 @@ section .title::after{
     background:rgb(238, 238, 238);
     color: rgb(89, 10, 10);
     bottom: -15px;
-    font-size: 20px;
+    font-size: 15px;
     left: 50%;
     padding: 5px;
     transform: translate(-50%);
@@ -199,40 +199,38 @@ section .title::after{
 /* Services section styling start */
 .services{
     margin-top: 80px;
-    color: hsl(245, 100%, 7%);
+    color: #010161;
+    background: #01016113;
 }
 
 .services .title::after{
     content: "what i provide";
-    background: white;
 }
 
 .services .title::before{
-    background: black;
+    background: #010161;
 }
 
 .services .services-content .card{
     width: calc(33% - 20px);
-    background-color: hsla(245, 100%, 7%, 0.747);
+    background-color: #010161;
     color: rgb(255, 255, 255);
+    border: 5px solid #01016113;
+    box-shadow: 1px 1px 15px 0 black;
     text-align: center;
     border-radius: 6px;
     padding: 20px 25px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: 0.3s;
 }
 
 .services .services-content .card:hover{
-    box-shadow: 1px 1px 3px 5px 0 black;
     color: white;
 }
 .services .services-content .card .box{
     transition: all 0.3s ease;
 }
 
-.services .services-content .card:hover .box{
-    transform: scale(1.05);
-}
 .services .services-content .card i{
     font-size: 50px;
     color: rgb(89, 10, 10);
@@ -305,58 +303,62 @@ section .title::after{
 
 .skills-content .right .php::before{
     width: 60%;
-    background:hsl(245, 100%, 7%);
+    background:#010161;
 }
 
 .skills-content .right .javaScript::before{
     width: 20%;
-    background:hsl(245, 100%, 7%);
+    background:#010161;
 }
 
 .skills-content .right .html::before{
     width: 80%;
-    background:hsl(245, 100%, 7%);
+    background:#010161;
 }
 
 .skills-content  .right .css::before{
     width: 60%;
-    background:hsl(245, 100%, 7%);
+    background:#010161;
 }
 
 .skills-content .right .UIUX::before{
     width: 70%;
-    background:hsl(245, 100%, 7%);
+    background:#010161;
 }
 
 .skills-content .right .python::before{
     width: 50%;
-    background:hsl(245, 100%, 7%);
+    background:#010161;
 }
 
 .skills-content .right .mysql::before{
     width: 60%;
-    background:hsl(245, 100%, 7%);
+    background:#010161;
 }
 
 /* team section styling */
 .teams .title::after{
     content: "Those with me";
-    background: white;
+   
+    
 
 }
 .teams{
-    color:hsl(245, 100%, 7%);
+    color:#010161;
     padding: 25px 35px 1;
+    background: #01016113;
 }
 
 .teams .title::before{
-    background: hsl(245, 100%, 7%);
+    background: #010161;
 }
 
 
 
 .teams .carousel .card{
-    background: hsla(245, 100%, 7%, 0.747);
+    background: #010161;
+
+    box-shadow: 1px 1px 15px 0 black;
     border-radius: 6px;
     padding: 25px 35px;
     text-align: center;
@@ -365,7 +367,7 @@ section .title::after{
 }
 
 .teams .carousel .card:hover{
-    background-color: hsl(245, 100%, 7%);;
+    background-color: #010161;;
 }
 
 .teams .carousel .card .box{
@@ -410,7 +412,7 @@ section .title::after{
     margin: 0 5px;
     outline: none!important;
     border-radius: 50%;
-    border: 2px solid hsl(245, 100%, 7%)!important;
+    border: 2px solid #010161!important;
     transition: all 0.3s ease;
 }
 
@@ -420,12 +422,13 @@ section .title::after{
 }
 
 .owl-dot.active, .owl-dot:hover{
-    background: hsl(245, 100%, 7%)!important;
+    background: #010161!important;
 }
 
 /* contact section styling */
 .contact .title::after{
     content: "get in touch";
+    background: white;
 }
 
 
@@ -433,6 +436,7 @@ section .title::after{
 /* About Section Styling */
 .about .title::after{
     content: "who i am";
+    background: white;
 }
 
 .about .about-content .left{
@@ -444,8 +448,7 @@ section .title::after{
     width: 400px;
     object-fit: cover;
     border-radius: 50px;
-    border: 5px solid rgb(255, 255, 255);
-    box-shadow: 1px 1px 15px 0 black;
+    box-shadow: 1px 1px 5px 0 black;
 }
 
 .about .about-content .right{
@@ -453,13 +456,13 @@ section .title::after{
 }
 
 .about .about-content .right .text{
-    font-size: 35px;
-    font-weight: 800;
+    font-size: 30px;
+    font-weight: 600;
     margin-bottom: 10px;
 }
 
 .about .about-content .right .text span{
-    color: hsl(245, 100%, 7%);
+    color: rgb(89, 10, 10);
 }
 
 .about .about-content .right p{
@@ -474,7 +477,7 @@ section .title::after{
     padding: 10px 30px;
     margin-top: 20px;
     border-radius: 8px;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 20px;
     transition: 0.5s;
 }
@@ -482,7 +485,7 @@ section .title::after{
 .about .about-content .right a:hover{
     border:3px solid rgb(89, 10, 10);
     background: none;
-    padding: 12px;
+    padding: 10px 30px;
     border-radius: 8px;
     color: rgb(89, 10, 10);
 }
@@ -522,7 +525,7 @@ section .title::after{
     }
     .navbar .menu{
         position: fixed;
-        background-color: rgba(4, 4, 100, 0.994); 
+        background-color: #010161;; 
         height: 100vh;
         width: 100%;
         left: -100%;
